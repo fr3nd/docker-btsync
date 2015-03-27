@@ -20,7 +20,7 @@ modified directly
 
 ```
 docker run \
-  -p 8888:8888 \
+  -p 127.0.0.1:8888:8888 \
   -p 55555:55555 \
   -h $(hostname) \
   -e BTSYNC_UID=$(id -u) \
