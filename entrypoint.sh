@@ -2,7 +2,7 @@
 
 set -e
 
-usermod -u $BTSYNC_UID -g $BTSYNC_GID btsync
+usermod --non-unique -u $BTSYNC_UID -g $BTSYNC_GID btsync
 
 mkdir -p /home/btsync/.sync
 chown btsync:btsync -R /home/btsync
